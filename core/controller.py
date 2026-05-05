@@ -43,6 +43,10 @@ class ParkingOutController:
         threading.Thread(target=self._rfid_loop, daemon=True).start()
         threading.Thread(target=self._qr_loop, daemon=True).start()
 
+        time.sleep(1)
+        print(f"[TEST controller] opening gate...")
+        self.modbus_open_gate()
+
     def stop(self):
         self.running = False
         self.modbus.disconnect()
