@@ -44,7 +44,7 @@ class ParkingOutController:
         threading.Thread(target=self._qr_loop, daemon=True).start()
 
         print(f"[TEST controller] opening gate...")
-        self.modbus_open_gate()
+        self.modbus.open_gate()
 
     def stop(self):
         self.running = False
