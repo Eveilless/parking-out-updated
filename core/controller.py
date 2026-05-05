@@ -77,7 +77,7 @@ class ParkingOutController:
                     loop_sensor = inputs[self.modbus.reg_loop_sensor]
                     button = inputs[self.modbus.reg_button_ticket]
 
-                    print(f"[DEBUG controller] button state: {button}", flush=True)
+                    # print(f"[DEBUG controller] button state: {button}", flush=True)
                     # Logic: Loop Sensor
                     if loop_sensor == 1:
                         with self.state_lock:
