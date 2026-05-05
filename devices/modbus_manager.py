@@ -17,7 +17,7 @@ class ModbusManager:
         self.reg_button_ticket = 2
         self.reg_loop_sensor = 0
         
-        self.slave_id_output = 2
+        self.slave_id_output = 1
         self.coil_address_output = 0
         self.output_count = 4
         self.coil_barrier_gate = 0
